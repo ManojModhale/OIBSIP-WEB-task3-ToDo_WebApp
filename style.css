@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 200vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 5px;
+}
+.container h1{
+    color: crimson;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    background-color: antiquewhite;
+    border: 2px solid antiquewhite;
+    border-radius: 30px;
+    padding: 3px 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.to-doApp {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    margin: 60px auto 60px;
+    padding: 40px 30px 40px;
+    border-radius: 10px;
+}
+
+.to-doApp h2 {
+    display: flex;
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.add-task {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.add-task button {
+    margin-top: 10px; /* Add space between the input area and the "Add Task" button */
+}
+.add-task input,
+.add-task textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.to-doApp-list {
+    width: 100%;
+    max-width: 700px;
+    background-color: #fff;
+    margin: 30px auto 00px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.to-doApp-list h2 {
+    display: flex;
+    color: #002765;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tasks-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 8px 8px;
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px; /* Add margin to separate tasks */
+    background-color: #e1e1e1; /* Background color for the task */
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+
+ul li::before {
+    content: ' ';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    /* margin-right: 10px; Margin between the checkbox and text */
+    margin-right: 0;
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    color:#555;
+    background-image: url(checked.png);
+}
+
+ul li .taskName {
+    font-size: 30px;
+    color: violet; /* Set the color to red */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul li .timestamp {
+    font-size: 14px;
+    color: #555;
+    margin-left: auto; /* Move timestamp to the right */
+}
+
+ul li span {
+    display: inline-block;
+    width: 100%;
+}
+
+ul li span.description {
+    font-size: 14px; /* Set the font size for description */
+    color: yellow; /* Set the color to yellow */
+}
+
+
+ul li .delete-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 30px; /* Increase font size */
+    border: 3px solid #ff5945;
+    border-radius: 30%;
+    padding: 2px 9px;  
+    color: #ff5945;
+    cursor: pointer;
+    margin-left: 10px; /* Add margin between the text and delete button */
+}
+
+ul li .delete-btn:hover {
+    text-decoration: underline;
+    color: #d63031; /* Change the color on hover to a different shade of red */
+}
+
