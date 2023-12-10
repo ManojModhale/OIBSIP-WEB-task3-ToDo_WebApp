@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the To-Do WebApp</h1>
+        <div class="to-doApp">
+            <h2>Add Task Here <img src="icon.png" alt=""></h2>
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Task">
+                <textarea id="descriptionInput" placeholder="Enter Description for Task" rows="4" cols="50">
+                </textarea><br>
+                <button onclick="addTask();" class="add-task-btn">Add Task</button>
+            </div>           
+        </div>
+
+        <div class="to-doApp-list">
+            <h2>To-Do list <img src="icon.png" alt=""></h2>
+            <p>For Completed Task just Tick that Task or Click on it.</p><br>
+            <div class="tasks-container">
+                <ul id="list-container">
+                   
+               </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
